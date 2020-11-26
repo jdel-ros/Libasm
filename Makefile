@@ -12,7 +12,7 @@ $(NAME): $(OBJ)
 	nasm $< -f macho64 -o $@
 
 test: $(NAME) main.c
-	gcc -no-pie $(CFLAGS) main.c $(NAME) -o test
+	gcc $(CFLAGS) main.c $(NAME) -o test
 
 clean:
 	rm -f $(OBJ)
