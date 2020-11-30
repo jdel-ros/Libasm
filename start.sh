@@ -1,5 +1,5 @@
 #!/bin/sh
 
 make
-gcc -Wall -Wextra -Werror main.c libasm.a
+gcc -Wall -Wextra -Werror srcs/main.c libasm.a
 ./a.out
