@@ -8,7 +8,7 @@ _ft_strcpy:             ;dst = rdi && src = rsi
 	jz		return_false
 
 _strcpy_loop:
-	mov		dl, byte [rsi + rcx]
+	mov		dl, byte [rsi + rcx] ;dl est un registre qu'on utilise pour passe un octet d'une chaine a l'autre
 	mov		byte [rdi + rcx], dl
 	cmp		[rsi + rcx] , byte 0x0
 	jz		return_true
